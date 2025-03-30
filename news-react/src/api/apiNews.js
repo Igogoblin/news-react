@@ -16,7 +16,6 @@ export const getNews = async () => {
   try {
     console.log("🌐 Загружаю новости с сервера");
     const response = await axios.get(`${BASE_URL}top-headlines`, {
-      // Проверь URL!
       params: {
         apiKey: API_KEY,
         country: "us", // Добавь нужные параметры, например, country или category
